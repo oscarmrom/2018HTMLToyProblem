@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+    <style>
+        nav {
+            background: #444;
+            width: 100%;
+        }
+
+        nav ul {
+            padding: 0;
+            margin: 0;
+        }        
+
+        nav ul li {
+            position: relative;
+            display: inline-block;
+            list-style-type: none;
+            margin: 0;
+            padding: 10px 0;
+        }
+
+        nav ul li:hover {
+            background: #03ADDF;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 12px;
+        }
+
+        nav ul li a:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav ul li.parent ul.child {
+            display: none;
+        }
+
+        nav ul li.parent:hover ul.child {
+            display: block;
+            position: absolute;
+            top: 40px;
+            background: #03addf;
+        }
+
+        nav ul li.parent ul.child li {
+            width: 9em;
+            padding: 0;
+        }
+
+        nav ul li.parent ul.child li:hover {
+            background: #008fba;
+        }
+
+        nav ul li.parent ul.child li a {
+            display: block;
+        }
+
+    </style>
+        <nav>
+            <ul>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li class="parent"><a href="#">Background Story</a>
+                    <ul class="child">
+                        <li><a href="#">Drop 1</a></li>
+                        <li><a href="#">Drop 2</a></li>
+                        <li><a href="#">Drop 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Resume</a></li>
+            </ul>
+        </nav>
+</html>
